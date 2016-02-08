@@ -9,4 +9,4 @@ addons:
       - intltool
       - autoconf
 install:
-  - ./autogen.sh && ./configure && make && sudo make install
+  - ./autogen.sh && ./configure && make && make install
