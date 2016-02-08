@@ -1,0 +1,12 @@
+language: c
+sudo: false
+addons:
+  apt:
+    packages:
+      - gcc
+      - make
+      - gettext
+      - intltool
+      - autoconf
+install:
+  - ./autogen.sh && ./configure && make && sudo make install
